@@ -26,8 +26,7 @@ html, body, #container
   height: 100%
 
 body
-  background: color-background
-  font: font-size font-sans
+  font: font-size font-serif
   -webkit-text-size-adjust: 100%
 
 .outer
@@ -58,11 +57,12 @@ body
   height: 100%
   width: 100%
   position: absolute
+  overflow: auto
+  background: #252525 url('images/line-tile.png') top left
   top: 0
   left: 0
   transition: 0.2s ease-out
   z-index: 1
-  background: color-background
   .mobile-nav-on &
     left: mobile-nav-width
 
