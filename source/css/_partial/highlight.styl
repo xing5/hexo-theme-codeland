@@ -1,4 +1,12 @@
 .article-entry
+  code
+    border 1px solid color-border
+    border-radius 2px
+    color color-link
+    margin:0 2px
+    padding:0 2px
+    font-family: font-mono
+    white-space:nowrap
   .gist
     background #fff
     border 1px solid color-border
@@ -10,6 +18,7 @@
     overflow auto
     color #666
     .line-numbers
+      font-family font-mono
       text-align center
       background none
     .gist-file
@@ -39,20 +48,22 @@
             color color-main01
 
 figure.highlight
+  margin-left 0px
+  margin-right 0px
   background #fff
   border 1px solid color-border
   margin-top 15px
   padding 0
   border-radius 2px
-  text-shadow 0 0 1px #fff
   line-height 1.6
   overflow auto
   position relative
   font-size 0.9em
+  font-family: font-mono
   figcaption
     color color-meta
-    margin-bottom 5px
-    text-shadow 0 0 1px #fff
+    text-align center
+    background-color #ece9e9
     a
       position absolute
       right 15px
@@ -74,6 +85,8 @@ figure.highlight
     padding 0
     border-right 1px solid color-border
     text-align center
+    .line
+      padding: 0 4px 0 4px
 
   .code
     padding-left 15px
@@ -84,72 +97,102 @@ figure.highlight
     height: 20px
 
 pre
-  // Theme: Solarized - Light
-  // More theme here: http://softwaremaniacs.org/media/soft/highlight/test.html
-  .comment
-  .template_comment
-  .diff .header
-  .doctype
-  .pi
-  .lisp .string
+  // Theme: github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+  // https://highlightjs.org/static/styles/github.css
+  .comment,
+  .template_comment,
+  .diff .header,
   .javadoc
-    color #93a1a1
+    color #998
     font-style italic
 
-  .keyword
-  .winutils
-  .method
-  .addition
-  .css .tag
-  .request
+  .keyword,
+  .css .rule .keyword,
+  .winutils,
+  .javascript .title,
+  .nginx .title,
+  .subst,
+  .request,
   .status
-  .nginx .title
-    color #859900
+    color #333
+    font-weight bold
 
-  .number
-  .command
-  .string
-  .tag .value
-  .phpdoc
+  .number,
+  .hexcolor,
+  .ruby .constant
+    color #008080
+
+  .string,
+  .tag .value,
+  .phpdoc,
+  .dartdoc,
   .tex .formula
-  .regexp
-  .hexcolor
-    color #2aa198
+    color #d14
 
-  .title
-  .localvars
-  .chunk
-  .decorator
-  .built_in
-  .identifier
-  .vhdl
-  .literal
-  .id
-    color #268bd2
+  .title,
+  .id,
+  .scss .preprocessor
+    color #900
+    font-weight bold
 
-  .attribute
-  .variable
-  .lisp .body
-  .smalltalk .number
-  .constant
-  .class .title
-  .parent
-  .haskell .type
-    color #b58900
-
-  .preprocessor
-  .preprocessor .keyword
-  .shebang
-  .symbol
-  .symbol .string
-  .diff .change
-  .special
-  .attr_selector
-  .important
+  .javascript .title,
+  .list .keyword,
   .subst
+    font-weight normal
+
+  .class .title,
+  .type,
+  .vhdl .literal,
+  .tex .command
+    color #458
+    font-weight bold
+
+  .tag,
+  .tag .title,
+  .rules .property,
+  .django .tag .keyword
+    color #000080
+    font-weight normal
+
+  .attribute,
+  .variable,
+  .lisp .body
+    color #008080
+
+  .regexp
+    color #009926
+
+  .symbol,
+  .ruby .symbol .string,
+  .lisp .keyword,
+  .clojure .keyword,
+  .scheme .keyword,
+  .tex .special,
+  .prompt
+    color #990073
+
+  .built_in
+    color #0086b3
+
+  .preprocessor,
+  .pragma,
+  .pi,
+  .doctype,
+  .shebang,
   .cdata
-  .clojure .title
-    color #cb4b16
+    color #999
+    font-weight bold
 
   .deletion
-    color #dc322f
+    background #fdd
+
+  .addition
+    background #dfd
+
+  .diff
+    .change
+      background #0086b3
+
+  .chunk
+    color #aaa
+

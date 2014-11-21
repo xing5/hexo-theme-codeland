@@ -15,11 +15,36 @@
   padding: 15px
   border-radius: 3px
   a
-    color: color-default
+    color: color-link
     text-decoration: none
     &:hover
       text-decoration: underline
+      color: color-link-dark
   ul, ol, dl
     ul, ol, dl
       margin-left: 15px
       list-style: disc
+  ol.toc, ul.toc
+    margin-left: 0
+    list-style: none
+    a
+      display:inline-block
+      width:100%
+    a.anchor
+      font-size: 1.2em 
+      font-family: font-mono
+      padding: 10px 0
+  ul.toc-child, ol.toc-child
+    list-style: none
+
+
+.fixed
+  position: fixed
+
+.recents
+  padding: 0
+  li
+    border-bottom: 1px solid color-widget-border
+    padding: 10px 15px
+    margin:-1px
+    font-weight: bold

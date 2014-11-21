@@ -1,19 +1,7 @@
 #header
-  height: banner-height
   position: relative
   border-bottom: 1px solid color-border
-  &:before, &:after
-    content: ""
-    position: absolute
-    left: 0
-    right: 0
-    height: 40px
-  &:before
-    top: 0
-    background: linear-gradient(rgba(0, 0, 0, 0.2), transparent)
-  &:after
-    bottom: 0
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.2))
+  background: #fcfcfc
 
 #header-outer
   height: 100%
@@ -23,27 +11,15 @@
   position: relative
   overflow: hidden
 
-#banner
-  position: absolute
-  top: 0
-  left: 0
-  width: 100%
-  height: 100%
-  background: url(banner-url) center #000
-  background-size: cover
-  z-index: -1
-
 #header-title
-  text-align: center
-  height: logo-size
-  position: absolute
-  top: 40%
-  left: 0
-  margin-top: logo-size * -0.5
+  float:left
+
+#logo-wrap
+  margin-top:8px
 
 $logo-text
   text-decoration: none
-  color: #fff
+  color: color-link
   font-weight: 300
 
 #logo
@@ -62,12 +38,12 @@ $logo-text
   margin-top: subtitle-size
 
 #main-nav
-  float: left
-  margin-left: -15px
+  float: right
+  margin-right: 40px
 
 $nav-link
   float: left
-  color: #fff
+  color: color-link
   opacity: 0.6
   text-decoration: none
   transition: opacity 0.2s
@@ -136,6 +112,7 @@ $nav-link
   background: #fff
   padding: 5px 15px
   border-radius: 15px
+  border: 1px solid color-link
 
 .search-form-input
   border: none

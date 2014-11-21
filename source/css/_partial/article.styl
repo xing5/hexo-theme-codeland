@@ -4,7 +4,7 @@
 .article-inner
   @extend $block
   overflow: hidden
-  background: #f2f2f2 url('images/noise.png') top left
+  background: color-background url('images/noise.png') top left
 
 .article-meta
   clearfix()
@@ -16,7 +16,7 @@
 .article-category
   float: left
   line-height: 1em
-  color: #ccc
+  color: color-grey
   margin-left: 8px
   &:before
     content: "\2022"
@@ -29,9 +29,10 @@
   padding: article-padding article-padding 0
 
 .article-title
+  font-family: font-sans
   text-decoration: none
-  font-size: 2em
-  font-weight: bold
+  font-size: 1.8em
+  font-weight: regular
   color: color-default
   line-height: line-height-title
   transition: color 0.2s
@@ -47,7 +48,7 @@
     line-height: line-height
     margin: line-height 0
   h1, h2, h3, h4, h5, h6
-    font-weight: bold
+    font-weight: regular
   h1, h2, h3, h4, h5, h6
     line-height: line-height-title
     margin: line-height-title 0
@@ -59,11 +60,12 @@
   ul, ol, dl
     margin-top: line-height
     margin-bottom: line-height
-  img, video
-    max-width: 100%
-    height: auto
-    display: block
-    margin: auto
+  p
+    img, video
+      max-width: 100%
+      height: auto
+      display: block
+      margin: auto
   .align-left
     margin-left: 20px
   iframe
@@ -80,14 +82,15 @@
     border-bottom: 1px solid color-border
     padding: 10px 0
   blockquote
-    font-family: font-serif
-    font-size: 1.4em
-    margin: line-height 20px
-    text-align: center
+    font-family: font-sans
+    font-size: 1em
+    border: 1px solid color-border
+    border-left: 4px solid color-border
+    padding: 5px 20px
     footer
       font-size: font-size
       margin: line-height 0
-      font-family: font-sans
+      font-family: font-serif
       cite
         &:before
           content: "—"
@@ -123,18 +126,21 @@
       height: 100%
       margin-top: 0
 
-.article-more-link a
-  display: inline-block
-  line-height: 1em
-  padding: 6px 15px
-  border-radius: 15px
-  background: color-background
-  color: color-grey
-  text-decoration: none
-  &:hover
-    background: color-link
-    color: #fff
+p.article-more-link
+  text-align: center
+  margin: 0 0 line-height*-0.5 0
+  a
+    display: inline-block
+    line-height: 1em
+    padding: 6px 15px
+    border-radius: 15px
+    background: color-background
+    color: color-grey
     text-decoration: none
+    &:hover
+      background: color-link
+      color: #fff
+      text-decoration: none
 
 .article-footer
   clearfix()
@@ -144,10 +150,10 @@
   padding-top: line-height
   margin: 0 article-padding article-padding
   a
-    color: color-grey
+    color: color-link
     text-decoration: none
     &:hover
-      color: color-default
+      color: color-link-dark
 
 .article-tag-list-item
   float: left

@@ -2,25 +2,25 @@
 menu:
   Home: /
   Archives: /archives
+  About: http://resume.xingwu.me/
 rss: /atom.xml
 
 # Content
-excerpt_link: Read More
+excerpt_link: More
 fancybox: true
 
 # Sidebar
 sidebar: right
 widgets:
 - category
-- tag
+- recent_posts
 - tagcloud
 - archive
-- recent_posts
 
 # Miscellaneous
-google_analytics:
-favicon: /favicon.png
-twitter:
+google_analytics: UA-43935113-3
+favicon: /favicon.ico
+twitter: coolwuxing
 google_plus:
 fb_admins:
 fb_app_id:
