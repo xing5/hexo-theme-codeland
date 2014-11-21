@@ -2,7 +2,6 @@
 menu:
   Home: /
   Archives: /archives
-  About: http://resume.xingwu.me/
 rss: /atom.xml
 
 # Content
@@ -18,9 +17,9 @@ widgets:
 - archive
 
 # Miscellaneous
-google_analytics: UA-43935113-3
+google_analytics: 
 favicon: /favicon.ico
-twitter: coolwuxing
+twitter: 
 google_plus:
 fb_admins:
 fb_app_id:
