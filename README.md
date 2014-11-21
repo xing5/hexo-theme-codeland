@@ -1,6 +1,6 @@
 # Codeland
 
-A light green theme based on **Landscape** for [Hexo].
+A light green theme based on **Landscape** for Hexo.
 
 - [Preview](http://xingwu.me)
 
