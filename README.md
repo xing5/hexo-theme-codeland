@@ -2,7 +2,7 @@
 
 A light green theme based on **Landscape** for Hexo.
 
-- [Preview](http://xingwu.me)
+- [Preview](http://xingwu.me/archives)
 
 ## Installation
 
