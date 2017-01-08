@@ -60,12 +60,12 @@
   ul, ol, dl
     margin-top: line-height
     margin-bottom: line-height
-  p
-    img, video
-      max-width: 100%
-      height: auto
-      display: block
-      margin: auto
+  img, video
+    max-width: 100%
+    height: auto
+    display: block
+    margin: auto
+    border: 1px solid
   .align-left
     margin-left: 20px
   iframe
@@ -322,35 +322,3 @@ $article-share-link
     display: block
     max-width: 100%
     margin: 0 auto
-/*
-$article-gallery-ctrl
-  position: absolute
-  top: 0
-  height: 100%
-  width: 60px
-  color: #fff
-  opacity: 0.3
-  transition: opacity 0.2s
-  cursor: pointer
-  &:hover
-    opacity: 0.8
-  &:before
-    font-size: 30px
-    font-family: font-icon
-    position: absolute
-    top: 50%
-    margin-top: @font-size * -0.5
-
-.article-gallery-prev
-  @extend $article-gallery-ctrl
-  left: 0
-  &:before
-    content: "\f053"
-    left: 15px
-
-.article-gallery-next
-  @extend $article-gallery-ctrl
-  right: 0
-  &:before
-    content: "\f054"
-    right: 15px*/

@@ -1,3 +1,4 @@
-<aside id="sidebar"<% if (theme.sidebar === 'bottom'){ %> class="outer"<% } %>>
-    <%- partial('_widget/toc', {cache:false}) %>
+<aside id="sidebar"<% if (theme.sidebar === 'bottom'){ %> class="outer"<% } else if (fixed) { %> class="fixed"<%}%>>
+    <%- partial('_widget/toc') %>
+    <%- partial('_widget/related_posts') %>
 </aside>

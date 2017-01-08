@@ -2,6 +2,7 @@
 menu:
   Home: /
   Archives: /archives
+  About: /about
 rss: /atom.xml
 
 # Content
@@ -12,14 +13,15 @@ fancybox: true
 sidebar: right
 widgets:
 - category
+- related_posts
 - recent_posts
 - tagcloud
 - archive
 
 # Miscellaneous
-google_analytics: 
+google_analytics: UA-43935113-3
 favicon: /favicon.ico
-twitter: 
+twitter: coolwuxing
 google_plus:
 fb_admins:
 fb_app_id:

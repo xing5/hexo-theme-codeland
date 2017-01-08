@@ -3,13 +3,13 @@
   <div id="container">
     <div id="wrap">
       <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
+      <div id="main-wrap" class="outer">
         <section id="main"><%- body %></section>
         <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
           <% if (page.toc === true){ %>
-            <%- partial('_partial/sidebar-toc') %>
+            <%- partial('_partial/sidebar-toc', {fixed: true}) %>
           <% } else {%>
-            <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+            <%- partial('_partial/sidebar') %>
           <% } %>
         <% } %>
       </div>
@@ -17,6 +17,7 @@
     </div>
     <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
     <%- partial('_partial/after-footer') %>
+    <a href='#logo' id='btn-btt'>^</a>
   </div>
 </body>
 </html>
